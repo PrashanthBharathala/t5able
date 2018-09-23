@@ -1,0 +1,29 @@
+view resolver:
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+oracle::
+spring.datasource.url=kCmk+0OGwQNsDtwfxqO3mnNDqdChRalZ5qVVbR3sHXcH2RNUklXq4qJ08srXy5w7my0mvvnZzCQ=
+spring.datasource.username=taLfLmly+rC5J1eSD/WCK8N/mrVF0FpY
+spring.datasource.password=PPfVOMEEkUVXIZqJuDRe6Pd9NNEOWbJf5Ajo+eWmHCk=
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+Logger ::
+
+logging.level.org.springframework.web=ERROR,INFO
+logging.level.com.innowave.mahaulb=DEBUG
+# root logging level, warning : too much output
+#logging.level.=DEBUG
+
+# Logging pattern for the console
+logging.pattern.console= "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+# Logging pattern for file
+logging.pattern.file= "%d{yyyy-MM-dd HH:mm:ss} [%thread] %X{mdcData}%5p %-5level %logger{36} - %msg%n"
+#logging.file=E:/AshokParmar/Project/innowave/MH-ULB/logs/mahaulb_logs.log
+logging.file=C:/weblogs/mahaulb_logs.log
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+log4j.appender.file.MaxFileSize=7MB
+log4j.appender.file.MaxBackupIndex=10
+log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+
